@@ -1,7 +1,7 @@
 import grid from 'gridfs-stream';
 import mongoose from 'mongoose';
 
-const url = ''   
+const url = 'https://drab-tan-turtle-suit.cyclic.app'   
 
 
 let gfs, gridfsBucket;
