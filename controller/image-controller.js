@@ -1,7 +1,7 @@
 import grid from 'gridfs-stream';
 import mongoose from 'mongoose';
 
-const url = ''   
+const url = 'https://git.heroku.com/dbugle.git'   
 
 
 let gfs, gridfsBucket;
