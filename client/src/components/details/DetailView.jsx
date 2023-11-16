@@ -75,8 +75,23 @@ const DetailView = () => {
     }, []);
 
     const deleteNews = async () => {  
-        await API.deletePost(post._id);
-        navigate('/')
+        // await API.deletePost(post._id);
+        try {
+            fetch(`https://dailybuglebackend.onrender.com/delete/${post._id}`, {
+                method: 'DELETE',
+                headers: {
+                    authorization: getAccessToken(),
+                    'Content-Type': 'application/json'
+                },
+            })
+            .then(res => res.json())
+            .then(data => {
+                console.log(data);
+                navigate('/');
+            })
+        } catch (error) {
+            console.log(error);
+        }        
     }
 
     return (
