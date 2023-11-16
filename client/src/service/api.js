@@ -4,7 +4,7 @@ import { API_NOTIFICATION_MESSAGES, SERVICE_URLS } from '../constants/config';
 import { getAccessToken, getRefreshToken, setAccessToken, getType } from '../utils/common-utils';
 
 // const API_URL = 'http://localhost:8000';
-const API_URL = "https://dailybuglebackend.onrender.com";
+const API_URL = "https://dailybuglebackend.onrender.com";    
 
 const axiosInstance = axios.create({
     baseURL: API_URL,
@@ -47,6 +47,7 @@ axiosInstance.interceptors.response.use(
 //////////////////////////////
 const processResponse = (response) => {
     if (response?.status === 200) {
+        console.log(response);
         return { isSuccess: true, data: response.data }
     } else {
         return {
@@ -124,10 +125,11 @@ for (const [key, value] of Object.entries(SERVICE_URLS)) {
         axiosInstance({
             method: value.method,
             url: value.url,
-            data: value.method === 'DELETE' ? '' : body,
+            data: value.method === 'DELETE' ? null : body,
             responseType: value.responseType,
             headers: {
                 authorization: getAccessToken(),
+                "Accept": value.method === 'DELETE' ? "application/json" : "application/json, form-data",
             },
             TYPE: getType(value, body),
             onUploadProgress: function(progressEvent) {
