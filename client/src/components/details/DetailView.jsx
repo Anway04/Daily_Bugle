@@ -7,6 +7,8 @@ import { Link, useNavigate, useParams } from 'react-router-dom'
 
 import { API } from '../../service/api';
 
+import { getAccessToken } from '../../utils/common-utils';
+
 import { DataContext } from '../../context/DataProvider';
 
 // components
