@@ -13,7 +13,7 @@ export const singupUser = async (request, response) => {
         // const hashedPassword = await bcrypt.hash(request.body.password, salt);
         const hashedPassword = await bcrypt.hash(request.body.password, 10);
 
-        const user = { username: request.body.username, name: request.body.name, password: hashedPassword }
+        const user = { username: request.body.username, email: request.body.email, password: hashedPassword }
 
         const newUser = new User(user);
         await newUser.save();
@@ -40,7 +40,7 @@ export const loginUser = async (request, response) => {
             const newToken = new Token({ token: refreshToken });
             await newToken.save();
         
-            response.status(200).json({ accessToken: accessToken, refreshToken: refreshToken,name: user.name, username: user.username });
+            response.status(200).json({ accessToken: accessToken, refreshToken: refreshToken,email: user.email, username: user.username });
         
         } else {
             response.status(400).json({ msg: 'Password does not match' })
