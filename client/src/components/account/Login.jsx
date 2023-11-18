@@ -66,7 +66,7 @@ const loginInitialValues = {
 };
 
 const signupInitialValues = {
-    name: '',
+    email: '',
     username: '',
     password: '',
 };
@@ -107,7 +107,7 @@ const Login = ({ isUserAuthenticated }) => {
 
             sessionStorage.setItem('accessToken', `Bearer ${response.data.accessToken}`);
             sessionStorage.setItem('refreshToken', `Bearer ${response.data.refreshToken}`);
-            setAccount({ name: response.data.name, username: response.data.username });
+            setAccount({ email: response.data.email, username: response.data.username });
             
             isUserAuthenticated(true)
             setLogin(loginInitialValues);
@@ -118,7 +118,7 @@ const Login = ({ isUserAuthenticated }) => {
     }
 
     const signupUser = async () => {
-        if (!signup.name || !signup.username || !signup.password) {
+        if (!signup.email || !signup.username || !signup.password) {
             showError("Fill all required fields");
             return;
         }
@@ -155,7 +155,7 @@ const Login = ({ isUserAuthenticated }) => {
                         </Wrapper> 
                         :
                         <Wrapper>
-                            <TextField variant="standard" value={signup.name} onChange={(e) => onInputChange(e)} name='name' label='Enter Name' />
+                            <TextField variant="standard" value={signup.email} onChange={(e) => onInputChange(e)} name='email' type='email' label='Enter Email' />
                             <TextField variant="standard" value={signup.username} onChange={(e) => onInputChange(e)} name='username' label='Enter Username' />
                             <TextField variant="standard" value={signup.password} onChange={(e) => onInputChange(e)} name='password' label='Enter Password' />
 
