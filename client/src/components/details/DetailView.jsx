@@ -101,7 +101,7 @@ const DetailView = () => {
             <Image src={post.picture || url} alt="post" />
             <Box style={{ float: 'right' }}>
                 {   
-                    (account.username === post.username || account.username === "Kumar Mritunjay" || account.username === "Punya Kakkar" || account.username === "Vishwajeet Patil" || account.username === "Vivek Karmakar" || account.username === "Anway Nagarkar") &&  
+                    account.username === post.username && 
                     <>  
                         <Link to={`/update/${post._id}`}><EditIcon color="primary" /></Link>
                         <DeleteIcon onClick={() => deleteNews()} color="error" />
