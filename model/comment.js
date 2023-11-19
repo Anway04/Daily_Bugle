@@ -1,7 +1,7 @@
 import mongoose from 'mongoose';
 
 const CommentSchema = mongoose.Schema({
-    email: {
+    name: {
         type: String,
         required: true,
     },
