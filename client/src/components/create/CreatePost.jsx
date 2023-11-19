@@ -91,16 +91,16 @@ const CreatePost = () => {
 
     return (
         <Container>
-{/*             <Image src={url} alt="post" /> */}
+            <Image src={url} alt="post" />
             
-  <Image src={url} alt="post" />
+{/*   <Image src={url} alt="post" />
 
 <div style={{ display: 'flex', alignItems: 'center' }}>
       <EditNoteIcon style={{ color: 'hsl(0, 100%, 70%)', fontSize: '1.5rem' }} />
       <p style={{ color: 'hsl(0, 100%, 70%)', fontSize: '1.5rem', marginLeft: '8px' }}>
         The website's Editors are authorized to edit or delete news items submitted by users.
       </p>
-    </div>
+    </div> */}
 
             <StyledFormControl>
                 <label htmlFor="fileInput">
