@@ -44,9 +44,9 @@ const Comment = ({ comment, setToggle }) => {
     return (
         <Component>
             <Container>
-                <Name>{comment.email}</Name>
+                <Name>{comment.name}</Name>
                 <StyledDate>{new Date(comment.date).toDateString()}</StyledDate>
-                { comment.email === account.username && <DeleteIcon onClick={() => removeComment()} /> }
+                { comment.name === account.username && <DeleteIcon onClick={() => removeComment()} /> }
             </Container>
             <Typography>{comment.comments}</Typography>
         </Component>
