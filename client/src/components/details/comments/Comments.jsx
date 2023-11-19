@@ -26,7 +26,7 @@ const StyledTextArea = styled(TextareaAutosize)`
 `;
 
 const initialValue = {
-    email: '',
+    name: '',
     postId: '',
     date: new Date(),
     comments: ''
@@ -60,7 +60,7 @@ const Comments = ({ post }) => {
     const handleChange = (e) => {
         setComment({
             ...comment,
-            email: account.username,
+            name: account.username,
             postId: post._id,
             comments: e.target.value
         });
