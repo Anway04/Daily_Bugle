@@ -92,9 +92,9 @@ const CreatePost = () => {
     return (
         <Container>
 {/*             <Image src={url} alt="post" /> */}
-            <div>
+            
   <Image src={url} alt="post" />
-</div>
+
 <div style={{ display: 'flex', alignItems: 'center' }}>
       <EditNoteIcon style={{ color: 'hsl(0, 100%, 70%)', fontSize: '1.5rem' }} />
       <p style={{ color: 'hsl(0, 100%, 70%)', fontSize: '1.5rem', marginLeft: '8px' }}>
