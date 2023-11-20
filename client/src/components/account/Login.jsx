@@ -10,13 +10,15 @@ const Component = styled(Box)`
     width: 500px;
     margin: auto;
     box-shadow: 5px 2px 5px 2px rgb(0 0 0/ 0.6);
+    border-radius: 10px;
 `;
 
 const Image = styled('img')({
     width: 500,
     display: 'flex',
     margin: 'auto',
-    padding: '0 0 0'
+    padding: '0 0 0',
+    borderRadius: '10px'
 });
 
 const Wrapper = styled(Box)`
@@ -25,6 +27,7 @@ const Wrapper = styled(Box)`
     flex: 1;
     overflow: auto;
     flex-direction: column;
+    border-radius: 10px;
     & > div, & > button, & > p {
         margin-top: 20px;
     }
@@ -149,7 +152,7 @@ const Login = ({ isUserAuthenticated }) => {
 
                             {error && <Error>{error}</Error>}
 
-                            <LoginButton variant="contained" onClick={() => loginUser()} >Login</LoginButton>
+                            <LoginButton variant="contained" onClick={() => loginUser()} >LOGIN</LoginButton>
                             <Text style={{ textAlign: 'center' }}>OR</Text>
                             <SignupButton onClick={() => toggleSignup()} style={{ marginBottom: 50 }}>Create an account</SignupButton>
                         </Wrapper> 
@@ -161,7 +164,7 @@ const Login = ({ isUserAuthenticated }) => {
 
                             {error && <Error>{error}</Error>}
 
-                            <SignupButton onClick={() => signupUser()} >Signup</SignupButton>
+                            <SignupButton onClick={() => signupUser()} >SIGN UP</SignupButton>
                             <Text style={{ textAlign: 'center' }}>OR</Text>
                             <LoginButton variant="contained" onClick={() => toggleSignup()}>Already have an account</LoginButton>
                         </Wrapper>
