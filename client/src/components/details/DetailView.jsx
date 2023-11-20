@@ -58,7 +58,7 @@ const Author = styled(Box)(({ theme }) => ({
 }));
 
 const DetailView = () => {
-    const url = 'https://i.ibb.co/mB5vykx/1g-Q5b-A7y-Zd2k-TLa-UWb-Q8-Jc-RIwwc-WXCz-Pq8m1e-Y9gz6-IM2-Noy-CQQ.jpg';
+    const url = 'https://i.ibb.co/Fg57HvV/istockphoto-1313303632-640x640.jpg';
     
     const [post, setPost] = useState({});
     const { account } = useContext(DataContext);
