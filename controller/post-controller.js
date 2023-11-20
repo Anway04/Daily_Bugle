@@ -58,11 +58,11 @@ export const getAllPosts = async (request, response) => {
     let posts;
     try {
         if(username) 
-            posts = await Post.find({ username: username });
+            posts = await Post.find({ username: username }.sort({$natural:-1});
         else if (category) 
-            posts = await Post.find({ categories: category });
+            posts = await Post.find({ categories: category }.sort({$natural:-1});
         else 
-            posts = await Post.find({});
+            posts = await Post.find({}.sort({$natural:-1});
             
         response.status(200).json(posts);
     } catch (error) {
