@@ -90,7 +90,8 @@ const CreatePost = () => {
                 
                 //API call
                 const response = await API.uploadFile(data);
-                post.picture = response.data;
+                // post.picture = response.data;
+                setPost({ ...post, picture: response.data });
             }
         }
         getImage();
