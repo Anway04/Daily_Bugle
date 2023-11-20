@@ -70,7 +70,7 @@ const CreatePost = () => {
     const [file, setFile] = useState('');
     const { account } = useContext(DataContext);
 
-    const url = post.picture ? post.picture : 'https://i.ibb.co/yyp2FRf/DALL-E-2023-11-02-22-50-20-Illustration-of-a-young-Asian-female-and-a-middle-aged-Black-male-side-by.png';
+    const url = post.picture ? post.picture : 'https://i.ibb.co/mB5vykx/1g-Q5b-A7y-Zd2k-TLa-UWb-Q8-Jc-RIwwc-WXCz-Pq8m1e-Y9gz6-IM2-Noy-CQQ.jpg';
     
     useEffect(() => {
         const getImage = async () => { 
