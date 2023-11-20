@@ -35,7 +35,7 @@ const LoginButton = styled(Button)`
     background: #000435;
     color: #fff;
     height: 48px;
-    border-radius: 2px;
+    border-radius: 20px;
 `;
 
 const SignupButton = styled(Button)`
@@ -43,7 +43,7 @@ const SignupButton = styled(Button)`
     background: #fff;
     color: #2874f0;
     height: 48px;
-    border-radius: 2px;
+    border-radius: 20px;
     box-shadow: 0 2px 4px 0 rgb(0 0 0 / 20%);
 `;
 
