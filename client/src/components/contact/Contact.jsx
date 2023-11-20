@@ -3,7 +3,7 @@ import { Box, styled, Typography, Link } from '@mui/material';
 import { GitHub, Instagram, Email } from '@mui/icons-material';
 
 const Banner = styled(Box)`
-    background-image: url(https://i.ibb.co/cXC86nT/istockphoto-1470351499-612x612.jpg);
+    background-image: url(https://www.tatvasoft.com/outsourcing/wp-content/uploads/2022/06/How-To-Become-A-Software-Developer.jpg);
     width: 100%;
     height: 50vh;
     background-position: left 0px top -100px;
