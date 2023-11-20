@@ -78,7 +78,7 @@ const CreatePost = () => {
     const [file, setFile] = useState('');
     const { account } = useContext(DataContext);
 
-    const url = post.picture ? post.picture : 'https://i.ibb.co/mB5vykx/1g-Q5b-A7y-Zd2k-TLa-UWb-Q8-Jc-RIwwc-WXCz-Pq8m1e-Y9gz6-IM2-Noy-CQQ.jpg';
+    const url = post.picture ? post.picture : 'https://i.ibb.co/f27M78k/Screenshot-2023-11-20-at-7-24-21-PM.png';
     
     useEffect(() => {
         const getImage = async () => { 
