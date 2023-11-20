@@ -4,7 +4,7 @@ import { styled, Box, TextareaAutosize, Button, InputBase, FormControl  } from '
 import { AddCircle as Add } from '@mui/icons-material';
 import { useNavigate, useLocation } from 'react-router-dom';
 import EditNoteIcon from '@mui/icons-material/EditNote';
-//hi
+
 
 
 import { API } from '../../service/api';
@@ -79,7 +79,7 @@ const CreatePost = () => {
     const [file, setFile] = useState('');
     const { account } = useContext(DataContext);
 
-    const url = post.picture ? post.picture : 'https://i.ibb.co/f27M78k/Screenshot-2023-11-20-at-7-24-21-PM.png';
+    const url = post.picture ? post.picture : 'https://cocorioko.net/wp-content/uploads/2017/07/news-report.jpg';
     
     useEffect(() => {
         const getImage = async () => { 
