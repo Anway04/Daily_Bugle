@@ -3,8 +3,6 @@ import React, { useState, useEffect, useContext } from 'react';
 import { TextField, Box, Button, Typography, styled } from '@mui/material';
 import { useNavigate } from 'react-router-dom';
 
-// import { API } from '../../service/api';
-
 import { API } from '../../service/api';
 import { DataContext } from '../../context/DataProvider';
 
@@ -41,6 +39,8 @@ const LoginButton = styled(Button)`
     color: #fff;
     height: 48px;
     border-radius: 20px;
+    font-size: 20px; 
+    font-weight: bold;
 `;
 
 const SignupButton = styled(Button)`
@@ -50,6 +50,8 @@ const SignupButton = styled(Button)`
     height: 48px;
     border-radius: 20px;
     box-shadow: 0 2px 4px 0 rgb(0 0 0 / 20%);
+    font-size: 20px; 
+    font-weight: bold;
 `;
 
 const Text = styled(Typography)`
