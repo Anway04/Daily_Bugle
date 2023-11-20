@@ -60,6 +60,7 @@ const EditorNote = styled(Box)(({ theme }) => ({
     alignItems: 'center',
     gap: theme.spacing(1),
     marginTop: theme.spacing(2),
+    fontSize: '20px',
 }));
 
 // Add styles for the button
