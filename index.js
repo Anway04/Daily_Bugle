@@ -34,7 +34,7 @@ const username = process.env.DB_USERNAME;
 const password = process.env.DB_PASSWORD;
 
 
-const URL= process.env.MONGODB_URI || `mongodb://${username}:${password}@ac-ppjwgqq-shard-00-00.2zv2izu.mongodb.net:27017,ac-ppjwgqq-shard-00-01.2zv2izu.mongodb.net:27017,ac-ppjwgqq-shard-00-02.2zv2izu.mongodb.net:27017/?ssl=true&replicaSet=atlas-zf8bd8-shard-0&authSource=admin&retryWrites=true&w=majority`;
+const URL= process.env.MONGODB_URI || `mongodb://${username}:${password}@ac-tnw6pdn-shard-00-00.fpoo15i.mongodb.net:27017,ac-tnw6pdn-shard-00-01.fpoo15i.mongodb.net:27017,ac-tnw6pdn-shard-00-02.fpoo15i.mongodb.net:27017/?ssl=true&replicaSet=atlas-vt2sdv-shard-0&authSource=admin&retryWrites=true&w=majority`;
   
 
 app.listen(PORT, () => console.log(`Server is running successfully on PORT ${PORT}`));
