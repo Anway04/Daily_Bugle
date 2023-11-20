@@ -59,7 +59,7 @@ const Update = () => {
 
     const { id } = useParams();
 
-    const url = 'https://images.unsplash.com/photo-1543128639-4cb7e6eeef1b?ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8bGFwdG9wJTIwc2V0dXB8ZW58MHx8MHx8&ixlib=rb-1.2.1&w=1000&q=80';
+    const url = 'https://i.ibb.co/mB5vykx/1g-Q5b-A7y-Zd2k-TLa-UWb-Q8-Jc-RIwwc-WXCz-Pq8m1e-Y9gz6-IM2-Noy-CQQ.jpg';
     
     useEffect(() => {
         const fetchData = async () => {
