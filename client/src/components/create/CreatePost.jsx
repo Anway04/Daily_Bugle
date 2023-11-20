@@ -62,7 +62,13 @@ const EditorNote = styled(Box)(({ theme }) => ({
     marginTop: theme.spacing(2),
 }));
 
-
+// Add styles for the button
+const StyledButton = styled(Button)`
+    font-weight: bold;
+    font-size: 1.2em;
+    border-radius: 20px;
+    background-color: teal;
+`;
 
 const CreatePost = () => {
     const navigate = useNavigate();
@@ -119,7 +125,7 @@ const CreatePost = () => {
                     onChange={(e) => setFile(e.target.files[0])}
                 />
                 <InputTextField onChange={(e) => handleChange(e)} name='title' placeholder="Title" />
-                    <Button onClick={() => savePost()} variant="contained" color="primary">Publish</Button>
+                    <StyledButton onClick={() => savePost()} variant="contained" color="primary">PUBLISH</StyledButton>
             </StyledFormControl>
 
             <Textarea
