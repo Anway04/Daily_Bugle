@@ -58,7 +58,7 @@ const Author = styled(Box)(({ theme }) => ({
 }));
 
 const DetailView = () => {
-    const url = 'https://i.ibb.co/SKndWLG/DALL-E-2023-11-09-04-16-21-A-lively-Indian-city-street-scene-bustling-with-the-activities-of-citizen.png';
+    const url = 'https://i.ibb.co/mB5vykx/1g-Q5b-A7y-Zd2k-TLa-UWb-Q8-Jc-RIwwc-WXCz-Pq8m1e-Y9gz6-IM2-Noy-CQQ.jpg';
     
     const [post, setPost] = useState({});
     const { account } = useContext(DataContext);
