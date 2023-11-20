@@ -41,6 +41,16 @@ const StyledTextArea = styled(TextareaAutosize)`
     }
 `;
 
+const StyledButton = styled(Button)`
+    font-weight: bold;
+    font-size: 20px;
+    border-radius: 50px;
+    background-color: teal;
+    &:hover {
+        background-color: darkslategray;
+    }
+`;
+
 const initialPost = {
     title: '',
     description: '',
@@ -112,7 +122,7 @@ const Update = () => {
                     onChange={(e) => setFile(e.target.files[0])}
                 />
                 <InputTextField onChange={(e) => handleChange(e)} value={post.title} name='title' placeholder="Title" />
-                <Button onClick={() => updateNewsPost()} variant="contained" color="primary">Update</Button>
+       <StyledButton onClick={() => updateNewsPost()} variant="contained">UPDATE</StyledButton>
             </StyledFormControl>
 
             <StyledTextArea
