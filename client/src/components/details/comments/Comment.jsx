@@ -41,7 +41,7 @@ const Comment = ({ comment, setToggle }) => {
     const removeComment = async () => {
        // await API.deleteComment(comment._id);
         try {
-            fetch(`https://dailybuglebackend.onrender.com/comment/delete/${post._id}`, {
+            fetch(`https://dailybuglebackend.onrender.com/comment/delete/${comment._id}`, {
                 method: 'DELETE',
                 headers: {
                     authorization: getAccessToken(),
@@ -51,7 +51,6 @@ const Comment = ({ comment, setToggle }) => {
             .then(res => res.json())
             .then(data => {
                 console.log(data);
-                navigate('/');
             })
         } catch (error) {
             console.log(error);
