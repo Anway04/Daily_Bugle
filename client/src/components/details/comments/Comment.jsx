@@ -37,7 +37,23 @@ const Comment = ({ comment, setToggle }) => {
     const { account } = useContext(DataContext)
     
     const removeComment = async () => {
-       await API.deleteComment(comment._id);
+       // await API.deleteComment(comment._id);
+        try {
+            fetch(`https://dailybuglebackend.onrender.com/comment/delete/${post._id}`, {
+                method: 'DELETE',
+                headers: {
+                    authorization: getAccessToken(),
+                    'Content-Type': 'application/json'
+                },
+            })
+            .then(res => res.json())
+            .then(data => {
+                console.log(data);
+                navigate('/');
+            })
+        } catch (error) {
+            console.log(error);
+        }
        setToggle(prev => !prev);
     }
 
