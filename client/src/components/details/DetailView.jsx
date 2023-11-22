@@ -74,26 +74,13 @@ const DetailView = () => {
             }
         }
         fetchData();
-    }, []);
+    }, [id]);
 
     const deleteNews = async () => {  
-        // await API.deletePost(post._id);
-        try {
-            fetch(`https://dailybuglebackend.onrender.com/delete/${post._id}`, {
-                method: 'DELETE',
-                headers: {
-                    authorization: getAccessToken(),
-                    'Content-Type': 'application/json'
-                },
-            })
-            .then(res => res.json())
-            .then(data => {
-                console.log(data);
-                navigate('/');
-            })
-        } catch (error) {
-            console.log(error);
-        }        
+        let response = await API.deletePost(post._id);      
+        if (response.isSuccess) {
+            navigate('/');
+        }
     }
 
     return (
