@@ -40,6 +40,7 @@ const Comment = ({ comment, setToggle }) => {
     
     const removeComment = async () => {
        // await API.deleteComment(comment._id);
+        console.log(comment);
         try {
             fetch(`https://dailybuglebackend.onrender.com/comment/delete/${comment._id}`, {
                 method: 'DELETE',
