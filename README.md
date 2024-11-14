@@ -1,11 +1,3 @@
 DailyBugle - Citizen Journalism Platform
 
-Team Members - 
-
-1. Anway Nagarkar
-
-2. Mritunjay Rajan
-
-3. Punya Kakkar
-
-4. Vishwajeet Patil
+Short Tour of Our Website - https://drive.google.com/file/d/1hsPKPRm3NwWFlQGP3L8qqTS4Far0AXK-/view?usp=drivesdk
